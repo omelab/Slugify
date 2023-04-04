@@ -1,0 +1,41 @@
+{
+  "name": "@omelab/slugify",
+  "version": "1.0.0",
+  "description": "Slugfy unicode String",
+  "main": "./slugify.js",
+  "keywords": [
+    "slugify",
+    "slug",
+    "url",
+    "urlify"
+  ],
+  "scripts": {
+    "build": "node bin/build",
+    "build:changelog": "github-changes --owner simov --repository slugify --only-pulls --use-commit-body --date-format '(YYYY-MM-DD)' --file CHANGELOG.md --verbose",
+    "test:ci": "npx mocha --recursive",
+    "test:cov": "npx nyc --reporter=lcov --reporter=text-summary mocha -- --recursive",
+    "test": "npm run build && npm run test:ci"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/omelab/slugify",
+  "author": "Abu Bakar Sideique <a.bakar87@gmail.com> (https://omelab.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omelab/slugify.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "slugify.d.ts",
+    "slugify.js"
+  ],
+  "types": "slugify.d.ts",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": { 
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
