@@ -1,5 +1,4 @@
-# Slugify
-# slugify
+# Slugify 
 
 [![npm-version]][npm] [![coveralls-status]][coveralls]
 
@@ -19,4 +18,9 @@ slugify('some string', {
   seperator: '-',  // replace spaces with replacement character, defaults to `-` 
   lower: false,    // convert to lower case, defaults to `false`
 })
+```
+
+```shell
+
+# npx tsc --skipLibCheck
 ```
